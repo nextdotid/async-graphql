@@ -56,11 +56,11 @@ thiserror = "1.0.24"
 
 # Feature optional dependencies
 bson = { version = "2.0.0", optional = true, features = ["chrono-0_4"] }
-chrono = { version = "0.4.19", optional = true, default-features = false, features = [
+chrono = { version = "*", optional = true, default-features = false, features = [
   "clock",
   "std",
 ] }
-chrono-tz = { version = "0.6.1", optional = true }
+chrono-tz = { version = "*", optional = true }
 hashbrown = { version = "0.12.0", optional = true }
 iso8601-duration = { version = "0.1.0", optional = true }
 log = { version = "0.4.16", optional = true }
